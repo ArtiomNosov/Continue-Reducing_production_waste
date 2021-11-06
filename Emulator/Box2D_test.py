@@ -340,7 +340,7 @@ def create_csv_of_experiment(FIGURES_LIST):
     for i in range(len(FIGURES_LIST)):
         colomns_for_df.append(f"s{i}")
     df = pd.DataFrame(data, columns=colomns_for_df)
-    df.to_csv('out.csv', index=False, header=False)
+    df.to_csv("Experiments/out.csv", index=False, header=True)
 
 
 # if __name__ == "__main__":
